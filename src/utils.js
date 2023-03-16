@@ -11,4 +11,4 @@ export const comparePasswords = async(password,passwordBD)=>{
     return bcrypt.compare(password,passwordBD)
 }
 
-export const PORT = 'glitch.com/~gem-alpine-asparagus'
+export const PORT = '8082'
