@@ -4,6 +4,7 @@ import cookieParser from 'cookie-parser'
 import session from 'express-session'
 import mongoStore from 'connect-mongo'
 import cors from 'cors'
+import { PORT } from './utils.js'
 
 import usersRouter from './persistence/routes/users.router.js'
 
@@ -35,7 +36,7 @@ app.use('/users', usersRouter)
 
 
 
-app.listen(8082, () => {
+app.listen(PORT, () => {
     console.log('Servidor escuchando en el puerto 8082');
 })
 /*
