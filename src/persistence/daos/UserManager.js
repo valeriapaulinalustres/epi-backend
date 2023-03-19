@@ -5,6 +5,7 @@ import { hashPassword, comparePasswords } from '../../utils.js'
 export default class UsersManager {
 
   async createUser(user) {
+ 
     const { email, password } = user
     try {
       const existeUsuario = await userModel.find({ email })
@@ -14,7 +15,8 @@ export default class UsersManager {
         await userModel.create(newUser)
         return newUser
       } else {
-        return null
+        console.log('pasa por null')
+        //return null
       }
     } catch (error) {
       console.log(error)

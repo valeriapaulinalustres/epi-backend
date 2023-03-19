@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "src/app.js"
+    "start": "nodemon src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
+    "mongodb": "^5.1.0",
     "mongoose": "^7.0.1"
   }
 }

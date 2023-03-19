@@ -31,12 +31,12 @@ console.log('ruta', req.body)
 
     const user = await usersManager.loginUser(req.body)
     if (user) {
-     const {first_name, last_name, profession, job, email} = user
+     const {first_name, last_name, profession, job, email, isAdmin} = user
      
     //    req.session.name = first_name
       req.session.email = email
       req.session.password = password
-      res.json({user: {first_name, last_name, profession, job, email}})
+      res.json({user: {first_name, last_name, profession, job, email, isAdmin}})
     } else {
       return null
       //   let mensaje = 'Usuario o contraseña inválidos'

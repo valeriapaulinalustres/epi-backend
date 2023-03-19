@@ -22,8 +22,8 @@ const usersSchema = new mongoose.Schema({
     type: String,
     required:true
   },
-  rol: {
-    type: String,
+  isAdmin: {
+    type: Boolean,
     required: true
   },
   password: {
