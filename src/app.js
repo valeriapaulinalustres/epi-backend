@@ -9,8 +9,8 @@ import { PORT } from './utils.js'
 import usersRouter from './persistence/routes/users.router.js'
 
 const app = express()
-app.use(cors({"Access-Control-Allow-Origin" : "https://epi-six.vercel.app/" }))
-
+app.use(cors())
+//{"Access-Control-Allow-Origin" : "https://epi-six.vercel.app/" }
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
