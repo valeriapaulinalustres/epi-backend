@@ -32,7 +32,7 @@ console.log('ruta', req.body)
     const user = await usersManager.loginUser(req.body)
     if (user) {
      const {first_name, last_name, profession, job, email, isAdmin} = user
-     res.set('Access-Control-Allow-Origin', '*')
+   //  res.set('Access-Control-Allow-Origin', '*')
     //    req.session.name = first_name
       req.session.email = email
       req.session.password = password
