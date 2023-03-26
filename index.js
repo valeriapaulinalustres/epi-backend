@@ -1,12 +1,12 @@
 import express from 'express'
-import './persistence/dbConfig.js'
+import './src/persistence/dbConfig.js'
 import cookieParser from 'cookie-parser'
 import session from 'express-session'
 import mongoStore from 'connect-mongo'
 import cors from 'cors'
-import { PORT } from './utils.js'
+import { PORT } from './src/utils.js'
 
-import usersRouter from './persistence/routes/users.router.js'
+import usersRouter from './src/persistence/routes/users.router.js'
 
 const app = express()
 app.use(cors())
