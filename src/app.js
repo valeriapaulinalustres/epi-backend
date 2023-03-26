@@ -46,7 +46,7 @@ app.use(
 )
 
 //rutas
-app.use('/users', usersRouter)
+app.use('/api/users', usersRouter)
 
 
 
